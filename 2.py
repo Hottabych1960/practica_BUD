@@ -16,8 +16,6 @@ with open('songs.csv', 'r', encoding='utf-8') as infile:
     data = [elem for elem in csv.reader(infile, delimiter=';')]
     data0 = data.pop(0)
     lst = q_sort(data)
-    for elem in lst:
-        print(elem)
     k = 1
     for row in lst:
         if k < 6:
