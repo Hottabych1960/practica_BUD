@@ -3,7 +3,6 @@ import csv
 with open('songs.csv', 'r', encoding='utf-8') as infile:  # открываем файл
     data = [elem for elem in csv.reader(infile, delimiter=';')]  # считываю файл в список data
     data0 = data.pop(0)  # сохраняю названия столбцов
-    print(data)
     for row in data:
 
         if row[-1] <= '01.01.2002':
